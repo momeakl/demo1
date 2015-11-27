@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>高冰的主页</title>
+	<link rel="stylesheet" href="css/resume.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body> 
+	<div id="home">
+		<div id="intro">
+		    <section>
+		        <h1 class="title fly1">忆</h1>
+		        <ul class="nav">
+		            <li><a href="http://gaobing.coding.io" target="_blank" class="fly2" title="高冰的简历">简 历</a></li>
+		            <li><a href="http://momeakl.github.io" target="_blank" class="fly2" title="我的博客">博 客</a></li>
+		            <li><a href="http://weibo.com/u/2766023655" target="_blank" class="fly2">微 博</a></li>
+		            <li><a href="http://momeakl.github.io/about" target="_blank" class="fly2">关 于</a></li>
+		        </ul>
+		    </section> 
+		    <footer> 
+		        <p class="fly">感恩生活,珍惜拥有</p>
+		        <ul>
+		            <li><a href="x" title="bingo"><span class="icon-pacman"></span></a></li>
+		            <li><a href="x" title="twitter"><span class="icon-twitter3"></span></a></li>
+		            <li><a href="x" title="github"><span class="icon-github"></span></a></li>
+		            <li><a href="x" title="facebook"><span class="icon-facebook3"></span></a></li>
+		        </ul>
+		    </footer>
+		</div>
+		<div id="images">
+		    <section>
+		        <p>の</p>
+		        <img src="img/memory.jpg" alt="车埕" />
+		    </section>
+		</div>
+	</div>
+    <script type="text/javascript" src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/jquery.textillate.js"></script>
+	<script>
+        $(function () {
+	
+        $('.fly1').textillate({
+            initialDelay: 900, //设置动画开始时间
+            delayScale: 4.5,
+            in: { effect: 'bounceIn'	//设置动画名称
+            }
+        });
+        $('.fly2').textillate({
+            initialDelay: 1500, //设置动画开始时间
+            delayScale: 5.5,
+            in: { effect: 'bounceIn'	//设置动画名称
+            }
+        });
+             
+        $('.fly').textillate({
+      // the default selector to use when detecting multiple texts to animate
+      selector: '.texts',
+      // enable looping
+      loop: false,
+      // sets the minimum display time for each text before it is replaced
+      minDisplayTime: 12000,
+      // sets the initial delay before starting the animation
+      initialDelay: 3000,
+      // set whether or not to automatically start animating
+      autoStart: true,
+      // custom set of 'in' effects. This effects whether or not the
+      // character is shown/hidden before or after an animation
+      inEffects: [],
+      // in animation settings
+      in: {
+        // set the effect name
+        effect: 'bounceIn',
+        // set the delay factor applied to each consecutive character
+        delayScale: 5.5,
+        // set the delay between each character
+        delay: 50,
+        // set to true to animate all the characters at the same time
+        sync: false,
+        // randomize the character sequence
+        // (note that shuffle doesn't make sense with sync = true)
+        shuffle: false
+      }
+        });
+	
+});   
+    </script>
+</body>
+</html>
